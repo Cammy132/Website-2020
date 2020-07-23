@@ -19,11 +19,68 @@
 </nav>
 
 <body>
-<div id="wrapper">
-	<h1>G'day Mate</h1>
-	<h1>Test<h1>
+
+<script>
+function getRandomColor() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+function setRandomColor() {
+  $("#colorpad").css("background-color", getRandomColor());
+  $("#colorpad2").css("background-color",getRandomColor2());
+  $("#colorpad3").css("background-color",getRandomColor3())
+}
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<div id="colorpad">
+
 </div>
+
+<script>
+function getRandomColor2() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+function setRandomColor2() {
+  $("#colorpad2").css("background-color", getRandomColor2());
+}
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<div id="colorpad2">
+
+</div>
+
+
+<script>
+function getRandomColor3() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+function setRandomColor3() {
+  $("#colorpad3").css("background-color", getRandomColor3());
+}
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<div id="colorpad3"></div>
+
 </body>
+<button onclick="setRandomColor()">Random Color</button>
+
 
 <footer>
     <h1>Footer</h1>

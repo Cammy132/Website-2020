@@ -35,21 +35,10 @@
 
 <script>
 
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-50px";
-  }
-}
-
-
 var ideas=[
 	"Website ",
 	"Bot ",
-	"Game"
+	"Game "
 ];
 
 var about=[
@@ -70,9 +59,9 @@ j="Computers "
 
 document.getElementById("demo").innerHTML = ideas[0]
 
-
 </script>
-<button type="button" onclick="alert(d + c + f + g)">Try it</button>
+
+<button type="button" id="myBtn" onclick="alert(a+b)">Try it</button>
 
 </body>
 

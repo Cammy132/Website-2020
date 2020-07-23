@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <link rel="stylesheet" href="css/style.css">
+	<meta charset="utf-8">
+	<title>Generator</title>
+	
+<header>
+	<h1>Generator</h1>
+</header>
+
+ <nav>
+	<ul>
+		<li><a href="idea.html">Ideas</a></li>
+	    <li><strong>Colour</strong></li>
+	    <li><a href="info.html">Info</a></li>
+	</ul>
+</nav>
+
+<body>
+
+<script>
+function getRandomColor3() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+function setRandomColor3() {
+  $("#colorpad3").css("background-color", getRandomColor3());
+}
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<div id="colorpad3" style="width:300px;height:300px;background-color:#000">
+
+</div>
+<button onclick="setRandomColor3()">Random Color</button>
+</body>
+
+
+
+<footer>
+    <h1>Footer</h1>
+</footer>
+
+</html>
