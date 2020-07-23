@@ -19,18 +19,60 @@
 	</ul>
 </nav>
 
+<div id="navbar">
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+</div>
+
 <body>
 <div id="wrapper">
 	<h1>G'day Mate</h1>
 	<h1>Test<h1>
 </div>
 
-<p id="idea"> </p>
-<button id="b" onclick="random();">Generate</button>
+<p id="demo"></p>
 
 <script>
-	
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+}
+
+
+var ideas=[
+	"Website ",
+	"Bot ",
+	"Game"
+];
+
+var about=[
+      "Minecraft "
+	  "Global Warming"
+	  "Computers"
+];
+
+var a,b,c,d,f,g,h,j;
+a="Website "
+b="Bot "
+c="Game "
+d="Make a "
+f="about "
+g="Minecraft "
+h="Pokemon "
+j="Computers "
+
+document.getElementById("demo").innerHTML = ideas[0]
+
+
 </script>
+<button type="button" onclick="alert(d + c + f + g)">Try it</button>
 
 </body>
 
