@@ -8,7 +8,7 @@
 	<title>Generator</title>
 	
 <header>
-	<h1>Generator</h1>
+	<img src="images/generator.png" alt="logo"></img>
 </header>
 
  <nav>
@@ -26,43 +26,28 @@
 </div>
 
 <body>
+	<script>
+		function randomAlerts() {
+    var alerts = new Array (
+    "Minecraft Game",
+    "Minecraft Bot",
+    "Minecraft Website",
+    "Discord Bot",
+    "Website");
+    
+    i = Math.floor(Math.random()*alerts.length);
+    var div = document.getElementById('response');
+    div.innerText = alerts[i];
+}
+	</script>
+
 <div id="wrapper">
-	<h1>G'day Mate</h1>
-	<h1>Test<h1>
+<div id="response"></div>
+
+	<button onClick="randomAlerts();">Click Me</button>
+
+
 </div>
-
-<p id="demo"></p>
-
-<script>
-
-var ideas=[
-	"Website ",
-	"Bot ",
-	"Game "
-];
-
-var about=[
-      "Minecraft "
-	  "Global Warming"
-	  "Computers"
-];
-
-var a,b,c,d,f,g,h,j;
-a="Website "
-b="Bot "
-c="Game "
-d="Make a "
-f="about "
-g="Minecraft "
-h="Pokemon "
-j="Computers "
-
-document.getElementById("demo").innerHTML = ideas[0]
-
-</script>
-
-<button type="button" id="myBtn" onclick="alert(a+b)">Try it</button>
-
 </body>
 
 <footer>
